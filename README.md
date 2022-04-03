@@ -37,7 +37,7 @@ def cross_entropy_error(y, t):
 ### 4、计算正确率
 ### 5、反向传播计算梯度
 ## 开始训练
-定义超参数。步长iters_num = 10000  ，batch_size = 100，学习率learning_rate = 0.1，学习率下降速度lr_decrease=0.999995，正则项reg=5e-6。
+定义超参数。步长iters_num = 10000  ，batch_size = 100，学习率learning_rate = 0.1，学习率下降速度lr_decrease=0.999995，正则项reg=5e-6，中间层大小为50。
 训练模型并测试。
 给出随步长增长，训练和测试的准确率。
 ## 画图与可视化
