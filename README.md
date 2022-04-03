@@ -18,7 +18,7 @@ def softmax(x):
     return np.exp(x) / np.sum(np.exp(x))
 ```
 ## 采用交叉熵计算损失函数
-'''
+```
 def cross_entropy_error(y, t):
     if y.ndim == 1:
         t = t.reshape(1, t.size)
@@ -29,4 +29,5 @@ def cross_entropy_error(y, t):
 
     batch_size = y.shape[0]
     return -np.sum(np.log(y[np.arange(batch_size), t] + 1e-7)) / batch_size
-'''
+```
+
