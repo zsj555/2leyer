@@ -30,4 +30,18 @@ def cross_entropy_error(y, t):
     batch_size = y.shape[0]
     return -np.sum(np.log(y[np.arange(batch_size), t] + 1e-7)) / batch_size
 ```
+## 定义两层神经网络类
+### 1、定义参数W1、W2、b1、b2
+### 2、前向传播
+### 3、计算损失函数
+### 4、计算正确率
+### 5、反向传播计算梯度
+## 开始训练
+定义超参数。步长iters_num = 10000  ，batch_size = 100，学习率learning_rate = 0.1，学习率下降速度lr_decrease=0.999995，正则项reg=5e-6。
+训练模型并测试。
+给出随步长增长，训练和测试的准确率。
+## 画图与可视化
+画出训练和测试的loss曲线、accuracy曲线。
+选取W1中前5维，转化为28*28的矩阵，进行可视化。
+## 保存模型
 
